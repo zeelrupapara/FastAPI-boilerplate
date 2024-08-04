@@ -1,11 +1,12 @@
 # fastapi 
 from fastapi import APIRouter, Depends, HTTPException
-
 # sqlalchemy
 from sqlalchemy.orm import Session
+import logging
 
 # import
-from app.core.dependencies import get_db, oauth2_scheme 
+from app.core.dependencies import get_db, oauth2_scheme
+from app.core.logger import get_logger
 from app.schemas.user import User, UserCreate, UserUpdate
 from app.api.endpoints.user import functions as user_functions
 
@@ -18,11 +19,12 @@ user_module = APIRouter()
 
 # create new user 
 @user_module.post('/', response_model=User)
-async def create_new_user(user: UserCreate, db: Session = Depends(get_db)):
+async def create_new_user(user: UserCreate, db: Session = Depends(get_db), logger: logging.Logger = Depends(get_logger)):
     db_user = user_functions.get_user_by_email(db, user.email)
     if db_user:
         raise HTTPException(status_code=400, detail="User already exists")
     new_user = user_functions.create_new_user(db, user)
+    logger.info(f"New user created: {new_user.id}")
     return new_user
 
 # get all user 

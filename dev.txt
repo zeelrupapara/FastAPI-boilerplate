@@ -5,6 +5,7 @@ bcrypt
 click
 ecdsa
 fastapi
+fastapi-cli
 greenlet
 h11
 idna
