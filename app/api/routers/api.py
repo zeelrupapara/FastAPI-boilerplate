@@ -6,5 +6,3 @@ router = APIRouter(prefix="/api/v1")
 
 router.include_router(user_router)
 router.include_router(health_router)
-
-

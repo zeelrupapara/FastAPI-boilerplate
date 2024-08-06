@@ -1,5 +1,6 @@
 import logging
 
+
 def get_logger() -> logging.Logger:
     logging.basicConfig(
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

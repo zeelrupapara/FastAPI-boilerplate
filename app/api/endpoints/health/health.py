@@ -22,4 +22,3 @@ async def healthdb(db: Session = Depends(get_db), logger: logging.Logger = Depen
         return {"status": "ok"}
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=f"Database connection error: {e}")
-    

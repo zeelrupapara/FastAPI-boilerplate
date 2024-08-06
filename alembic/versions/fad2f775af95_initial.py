@@ -1,7 +1,7 @@
 """initial
 
 Revision ID: fad2f775af95
-Revises: 
+Revises:
 Create Date: 2024-02-05 00:48:53.942281
 
 """

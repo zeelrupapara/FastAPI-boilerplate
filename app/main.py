@@ -3,6 +3,7 @@ from fastapi import FastAPI, Depends
 from app.core.modules import init_routers, make_middleware
 from app.core.logger import get_logger
 
+
 def create_app() -> FastAPI:
     app_ = FastAPI(
         title="FastAPI starter kit",
