@@ -27,3 +27,5 @@ starlette
 typing_extensions
 uvicorn
 WTForms
+pre-commit
+flake8==7.1.1
