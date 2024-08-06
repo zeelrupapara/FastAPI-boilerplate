@@ -8,6 +8,7 @@ def create_app() -> FastAPI:
         title="FastAPI starter kit",
         description="FastAPI starter kit that is needed for every fastapi project.",
         version="1.0.0",
+        docs_url="/api/v1/docs",
         dependencies=[Depends(get_logger)],
         middleware=make_middleware(),
     )
