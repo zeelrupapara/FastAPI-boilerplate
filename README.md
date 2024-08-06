@@ -131,6 +131,12 @@ Once `pip` has finished downloading the dependencies:
 (venv)$ uvicorn app.main:app --reload
 ```
 
+Linting:
+```
+# install lintter
+pre-commit install
+```
+
 ## User module's API
 
 | SRL | METHOD   | ROUTE              | FUNCTIONALITY                  | Fields                                                                                |
