@@ -110,6 +110,11 @@ Once `pip` has finished downloading the dependencies:
 (venv)$ uvicorn app.main:app --reload
 ```
 
+Scripts
+```python
+python scripts/main.py
+```
+
 Linting:
 ```
 # install lintter
