@@ -1,26 +1,5 @@
 # FastAPI Starter Kit
 A professional FastAPI template
-<p>
-    <a href="https://github.com/MahmudJewel/fastapi-starter-kit/fork">
-        <img src="https://img.shields.io/github/forks/MahmudJewel/fastapi-starter-kit.svg?style=social&label=Fork" />
-    </a>
-    <a href="https://github.com/MahmudJewel/fastapi-starter-kit/fork">
-        <img src="https://img.shields.io/github/stars/MahmudJewel/fastapi-starter-kit.svg?style=social&label=Stars" />
-    </a>
-    <a href="https://github.com/MahmudJewel/fastapi-starter-kit/fork">
-        <img src="https://img.shields.io/nuget/dt/Azylee.Core.svg" />
-    </a>
-</p>
-<p>
-    If the repo is helpful, please give a star and fork it.
-</p>
-<a href="https://github.com/MahmudJewel/fastapi-starter-kit/fork">
-    Click here to clone/fork the repository
-</a>
-
-<!-- [![Fork](https://img.shields.io/github/forks/MahmudJewel/fastapi-starter-kit.svg?style=social&label=Fork)](https://github.com/MahmudJewel/fastapi-starter-kit/fork)
-[![Stars](https://img.shields.io/github/stars/MahmudJewel/fastapi-starter-kit.svg?style=social&label=Stars)](https://github.com/MahmudJewel/fastapi-starter-kit)
-[![NuGet](https://img.shields.io/nuget/dt/Azylee.Core.svg)](https://www.nuget.org/packages/Azylee.Core)   -->
 
 ## Features:
 
@@ -172,6 +151,3 @@ pre-commit install
     uvicorn
     python-jose
     alembic
-
-For production level project, Please follow this repo https://github.com/MahmudJewel/fastapi-production-kit
-### Happy Coding
